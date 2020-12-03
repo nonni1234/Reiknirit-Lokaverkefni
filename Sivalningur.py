@@ -5,6 +5,9 @@ class Sivalningur(Form):
         Form.__init__(self,radius)
         self.height = height
 
+    def __str__(self):
+        return f"Type: Sivalningur, radius: {self.radius}, height: {self.height}"
+
     def Flatarmal(self):
         r = self.radius
         h = self.height
